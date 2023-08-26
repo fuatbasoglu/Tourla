@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "950162370084",
+    "project_id": "tourla-fd0e1",
+    "storage_bucket": "tourla-fd0e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950162370084:android:3fa3545e14855c771eb2b1",
+        "android_client_info": {
+          "package_name": "com.fuatbasoglu.tourl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950162370084-els5gtf7h60moki4acobfhi7srv4t228.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fuatbasoglu.tourl",
+            "certificate_hash": "0a6612e5d3e7069490449ccbda5b89344206804c"
+          }
+        },
+        {
+          "client_id": "950162370084-oirm0sel62d2td711alr0ihp4d6un7d8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRNPJ9y5lMM-oTtf37B7bbnss-3RpiJ5o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950162370084-oirm0sel62d2td711alr0ihp4d6un7d8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
