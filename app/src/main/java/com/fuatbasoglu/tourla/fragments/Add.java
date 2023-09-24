@@ -12,7 +12,7 @@ import com.fuatbasoglu.tourla.R;
 
 
 public class Add extends Fragment { }
-//deneme
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
