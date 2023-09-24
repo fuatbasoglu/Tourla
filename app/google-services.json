@@ -22,7 +22,7 @@
           }
         },
         {
-          "client_id": "950162370084-oirm0sel62d2td711alr0ihp4d6un7d8.apps.googleusercontent.com",
+          "client_id": "950162370084-c9d0pru0ofk2i7dr4274gc6intka84fb.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -35,7 +35,36 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "950162370084-oirm0sel62d2td711alr0ihp4d6un7d8.apps.googleusercontent.com",
+              "client_id": "950162370084-c9d0pru0ofk2i7dr4274gc6intka84fb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950162370084:android:aa7f484d5defdc011eb2b1",
+        "android_client_info": {
+          "package_name": "com.fuatbasoglu.tourla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950162370084-c9d0pru0ofk2i7dr4274gc6intka84fb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRNPJ9y5lMM-oTtf37B7bbnss-3RpiJ5o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950162370084-c9d0pru0ofk2i7dr4274gc6intka84fb.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

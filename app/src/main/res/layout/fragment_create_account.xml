@@ -91,6 +91,6 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="26dp"
         android:text="Back To Login"
-        android:textStyle="bold"
+        android:textStyle="bold"/>
 
 </RelativeLayout>

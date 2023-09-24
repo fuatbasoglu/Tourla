@@ -1,5 +1,5 @@
 package com.fuatbasoglu.tourla.fragments;
-
+//OFYF
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -38,7 +38,7 @@ public class CreateAccountFragment extends Fragment {
     private TextView loginTv;
     private Button signUpBtn;
     private FirebaseAuth auth;
-    public static final String EMAIL_REGEX = "^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$";
+    public static final String EMAIL_REGEX ="^(.+)@(.+)$";
     public CreateAccountFragment() {
 
         // Required empty public constructor
@@ -58,6 +58,9 @@ public class CreateAccountFragment extends Fragment {
 
         init(view);
 
+        auth = FirebaseAuth.getInstance();
+
+
         clickListener();
 
     }
@@ -68,7 +71,7 @@ public class CreateAccountFragment extends Fragment {
         emailEt= view.findViewById(R.id.emailEt);
         passwordEt= view.findViewById(R.id.passwordEt);
         confirmPasswordEt= view.findViewById(R.id.confirmPassEt);
-        loginTv= view.findViewById(R.id.loginTV);
+        loginTv= view.findViewById(R.id.loginTv);
         signUpBtn= view.findViewById(R.id.signUpBtn);
         progressBar = view.findViewById(R.id.progressBar);
 
@@ -127,7 +130,19 @@ public class CreateAccountFragment extends Fragment {
                         if (task.isSuccessful()){
 
                             FirebaseUser user = auth.getCurrentUser();
+                            user.sendEmailVerification()
+                                            .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                @Override
+                                                public void onComplete(@NonNull Task<Void> task) {
 
+                                                if (task.isSuccessful()){
+                                                    Toast.makeText(getContext(),"Email verification link send", Toast.LENGTH_SHORT).show();
+
+                                                }
+
+
+                                                }
+                                            });
                             uploadUser(user,name,email);
 
                         }else {

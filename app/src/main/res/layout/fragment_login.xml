@@ -17,6 +17,7 @@
         android:layout_marginLeft="16dp"/>
 
     <LinearLayout
+        android:id="@+id/ll1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -47,7 +48,7 @@
             android:layout_gravity="end"
             android:textStyle="bold"
             android:layout_marginEnd="16dp"
-            android:id="@+id/forgotTV"
+            android:id="@+id/forgotTV"/>
         
         
         
@@ -55,29 +56,40 @@
 
     </LinearLayout>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sıgn Up"
-        android:background="@drawable/btn_bg"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:textColor="@color/white"
-        android:layout_above="@+id/googleSignInButton"
-        android:layout_marginBottom="18dp"
-        android:id="@+id/loginTV"/>
+   <ProgressBar
+       android:id="@+id/progressBar"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_above="@+id/googleSignInBtn"
+       android:layout_below="@+id/ll1"
+       android:layout_centerHorizontal="true"
+       android:visibility="gone"/>
+
 
     <Button
+        android:id="@+id/signUpTv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign ın wıth google"
-        android:background="@drawable/btn_bg"
+        android:layout_above="@+id/googleSignInBtn"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_bg"
+        android:text="Sıgn Up"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/googleSignInBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/SignUpTV"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="18dp"
-        android:id="@+id/googleSignInButton" />
+        android:background="@drawable/btn_bg"
+        android:text="Sign ın wıth google"
+        android:textColor="@color/white" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -87,6 +99,6 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="26dp"
         android:text="Create Account , Sign Up"
-        android:textStyle="bold"
+        android:textStyle="bold"/>
 
 </RelativeLayout>
